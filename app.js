@@ -33,7 +33,6 @@ function createTaken() {
 createBoard();
 createTaken();
 
-//must go after
 let blocks= Array.from(document.querySelectorAll('.board div'))
 
 const nextBoard = document.createElement('div');
