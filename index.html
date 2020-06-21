@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tetris </title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="columns">
+        <div class="column is-two-thirds is-widescreen left-side">
+            <div class="board">
+            </div>
+        </div>
+        <div class="column is-one-third is-widescreen right-side">
+            <h1> TETRIS </h1>
+            <p class="score"> <strong> Score: </strong> <span id="score"> 0 </span> </p>
+            <br>
+            <button class="button is-info is-outlined is-large start-btn"> START </button>
+            <br>
+            <p class="menu"> <strong> Too Easy? </strong> </p>
+            <p class="menu"> Press us once to start at
+                a faster level. Press us twice to change to a faster level. </p>
+            <button class="button is-primary is-outlined faster"> FASTER </button>
+            <button class="button is-danger is-outlined fastest"> FASTEST </button>
+            <button class="button is-success is-outlined scary-fast"> YOU ARE SCARY </button>
+        </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
