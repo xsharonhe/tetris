@@ -1,3 +1,4 @@
+//initialize variables:
 let height = 20;
 let width = 10;
 const board = document.querySelector('.board')
@@ -15,6 +16,7 @@ const colours = [
     '#3f3f44'
 ]
 
+//creating boards:
 function createBoard() {
     for (let y = 0; y < width * height; y++){
         const block = document.createElement('div');
@@ -52,7 +54,8 @@ function mini() {
 }
 
 mini(); 
-        
+
+//tetrominoes array:
 const lTet = [
     [1, width+1, width*2+1, 2],
     [width, width+1, width+2, width*2+2],
@@ -90,6 +93,7 @@ const iTet = [
 
 const allTets = [lTet, zTet, tTet, oTet, iTet]
 
+//gameplay:
 let currentPosition = 4;
 let currentRotation = 0;
 
